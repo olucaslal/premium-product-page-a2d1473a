@@ -98,7 +98,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 opacity-70" />
-                <a href="tel:+5531993753060" className="opacity-70 hover:opacity-100 transition-opacity">
+                <a href="https://wa.me/5531993753060?text=Quero%20comprar%20o%20%22Sugador%20de%20Clit%C3%B3ris%20Em%20Formato%20de%20Rosa%20e%20Vibrador%20Vai%20e%20Vem%22" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
                   (31) 99375-3060
                 </a>
               </li>

@@ -57,10 +57,7 @@ const ProductInfo = () => {
       return;
     }
     
-    toast({
-      title: "Redirecionando...",
-      description: "Você será direcionado para o checkout.",
-    });
+    window.open("https://wa.me/5531993753060?text=Quero%20comprar%20o%20%22Sugador%20de%20Clit%C3%B3ris%20Em%20Formato%20de%20Rosa%20e%20Vibrador%20Vai%20e%20Vem%22", "_blank");
   };
 
   return (
