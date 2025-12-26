@@ -1,149 +1,167 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
 const ProductDescription = () => {
   return (
     <section className="py-12 border-t border-border">
       <div className="container">
-        <Accordion type="single" collapsible defaultValue="description" className="w-full">
-          {/* Description */}
-          <AccordionItem value="description" className="border-b border-border">
-            <AccordionTrigger className="section-title hover:no-underline py-6">
-              Descrição do Produto
-            </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground leading-relaxed pb-8">
-              <div className="space-y-4 max-w-3xl">
-                <p>
-                  O Sugador de Clitóris em Formato de Rosa com Vibrador Vai e Vem é a combinação perfeita 
-                  de design elegante e tecnologia de prazer avançada. Com seu formato discreto de rosa, 
-                  este produto oferece dupla estimulação para momentos inesquecíveis.
-                </p>
-                <p>
-                  A parte superior em formato de rosa possui tecnologia de sucção por ondas de pressão, 
-                  que simula a sensação de sucção oral com 10 intensidades diferentes. Já o vibrador 
-                  flexível com movimento vai e vem proporciona estimulação interna profunda.
-                </p>
-                <h3 className="font-heading font-semibold text-foreground pt-4">Características Principais:</h3>
-                <ul className="list-disc list-inside space-y-2 pl-2">
-                  <li>10 modos de sucção por ondas de pressão</li>
-                  <li>Vibrador com movimento vai e vem automático</li>
-                  <li>Material em silicone médico ultra macio</li>
-                  <li>Design discreto e elegante em formato de rosa</li>
-                  <li>Bateria recarregável via USB</li>
-                  <li>Resistente à água - pode ser usado no banho</li>
-                  <li>Motor silencioso para uso discreto</li>
-                  <li>Haste flexível que se adapta à anatomia</li>
-                </ul>
-                <p>
-                  Perfeito para uso solo ou a dois, o produto vem em embalagem 100% discreta sem 
-                  identificação do conteúdo, garantindo sua privacidade.
-                </p>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+        {/* Description */}
+        <div className="mb-12">
+          <h2 className="section-title mb-6">DESCRIÇÃO</h2>
+          <div className="space-y-6 text-muted-foreground leading-relaxed max-w-4xl">
+            <p>
+              Conceda prazeres inigualáveis ao seu corpo com os encantos deste sex toy Em Formato de Rosa!
+            </p>
+            <p>
+              O poder orgástico do Sugador de Clitóris se completa com o Vibrador Vai e Vem, resultando num acessório perfeito para o seu prazer!
+            </p>
 
-          {/* How to Use */}
-          <AccordionItem value="usage" className="border-b border-border">
-            <AccordionTrigger className="section-title hover:no-underline py-6">
-              Modo de Uso
-            </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground leading-relaxed pb-8">
-              <div className="space-y-4 max-w-3xl">
-                <ol className="list-decimal list-inside space-y-4 pl-2">
-                  <li>
-                    <span className="font-medium text-foreground">Carregamento:</span> Antes do primeiro uso, 
-                    carregue completamente o produto por aproximadamente 2 horas utilizando o cabo USB magnético incluso.
-                  </li>
-                  <li>
-                    <span className="font-medium text-foreground">Ligar a rosa (sucção):</span> Pressione e segure o 
-                    botão superior por 2 segundos. Cada toque adicional alterna entre os 10 modos de sucção.
-                  </li>
-                  <li>
-                    <span className="font-medium text-foreground">Ligar o vibrador:</span> Pressione o botão inferior 
-                    para ativar o movimento vai e vem. Cada toque ajusta a velocidade.
-                  </li>
-                  <li>
-                    <span className="font-medium text-foreground">Uso recomendado:</span> Utilize gel lubrificante 
-                    à base de água para maior conforto. A haste flexível permite ajuste ao corpo.
-                  </li>
-                  <li>
-                    <span className="font-medium text-foreground">Desligar:</span> Pressione e segure qualquer 
-                    botão por 2 segundos para desligar a função correspondente.
-                  </li>
-                </ol>
-                <div className="bg-primary-light p-4 rounded-lg mt-6">
-                  <p className="text-sm text-foreground">
-                    <span className="font-semibold">Dica:</span> Limpe o produto antes e após cada uso com 
-                    água morna e sabonete neutro ou higienizador específico para toys. Seque completamente antes de guardar.
-                  </p>
-                </div>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+            <div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">Quais são as suas dimensões aproximadas?</h3>
+              <ul className="space-y-1 pl-4">
+                <li>Comprimento total: 31 cm.</li>
+                <li>Diâmetro do bocal: 1,3 cm.</li>
+                <li>Comprimento do vibrador: 10 cm.</li>
+                <li>Diâmetro da parte mais grossa do vibrador: 3 cm.</li>
+              </ul>
+            </div>
 
-          {/* Technical Specs */}
-          <AccordionItem value="specs" className="border-b border-border">
-            <AccordionTrigger className="section-title hover:no-underline py-6">
-              Ficha Técnica
-            </AccordionTrigger>
-            <AccordionContent className="pb-8">
-              <div className="max-w-2xl">
-                <table className="w-full">
-                  <tbody className="divide-y divide-border">
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Material</td>
-                      <td className="py-3 text-muted-foreground">Silicone Médico + ABS</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Dimensões totais</td>
-                      <td className="py-3 text-muted-foreground">22cm x 4cm</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Diâmetro da rosa</td>
-                      <td className="py-3 text-muted-foreground">5cm</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Comprimento inserível</td>
-                      <td className="py-3 text-muted-foreground">12cm</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Modos de sucção</td>
-                      <td className="py-3 text-muted-foreground">10 intensidades</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Movimento vai e vem</td>
-                      <td className="py-3 text-muted-foreground">3 velocidades</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Bateria</td>
-                      <td className="py-3 text-muted-foreground">Li-ion recarregável via USB</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Tempo de carga</td>
-                      <td className="py-3 text-muted-foreground">2 horas</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Autonomia</td>
-                      <td className="py-3 text-muted-foreground">Até 60 minutos</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Resistência à água</td>
-                      <td className="py-3 text-muted-foreground">IPX6 (à prova de respingos)</td>
-                    </tr>
-                    <tr className="hover:bg-secondary/50 transition-colors">
-                      <td className="py-3 pr-4 font-medium text-foreground">Itens inclusos</td>
-                      <td className="py-3 text-muted-foreground">Produto, cabo USB magnético, manual</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+            <div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">O que é o Sugador de Clitóris Em Formato de Rosa e Vibrador Vai e Vem?</h3>
+              <p className="mb-4">
+                É um brinquedo erótico feminino hiper discreto e charmoso, composto por duas partes: A superior em forma de rosa que exerce 10 modos de pulsação e um vibrador que faz 7 movimentos de vai e vem com 7 níveis vibratórios.
+              </p>
+              <p className="mb-4">
+                Ideal para quem desejar saciar seu prazer por inteiro, mas não abre mão da discrição. Este sex toy é perfeito na sua dupla função estimulante, com a vantagem de apresentar uma aparência que o distancia do universo erótico.
+              </p>
+              <p>
+                Recarregável via USB, vem com cabo que é conectável a ele por área magnética, o que o torna resistente à água. É feito em silicone acetinado super macio, oferecendo uma textura hiper aconchegante e absolutamente confortável.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">Quais são os seus benefícios?</h3>
+              <ul className="space-y-1 pl-4">
+                <li>Dois em um;</li>
+                <li>Incita o clitóris;</li>
+                <li>Estímulo vaginal;</li>
+                <li>Formato discreto;</li>
+                <li>Resistente à água;</li>
+                <li>Orgasmos intensos;</li>
+                <li>Material confortável;</li>
+                <li>7 modos de vibração;</li>
+                <li>7 modos de vai e vem;</li>
+                <li>10 modos de pulsação;</li>
+                <li>Carregamento magnético.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">Por que usar?</h3>
+              <p className="mb-4">
+                Com este brinquedo erótico potente e completo, a mulher terá dois sex toys no mesmo acessório! Assim ela despertará seu prazer clitoriano e vaginal para chegar ao clímax mais depressa, num estímulo bem mais intenso.
+              </p>
+              <p className="mb-4">
+                O resultado são orgasmos de outro mundo! Os movimentos de vai vem remetem à penetração da relação sexual, deixando o ato super realista. E a rosa simula o sexo oral, excitando o clitóris incansavelmente com sua pulsação.
+              </p>
+              <p>
+                Tudo isso com total discrição, uma vez que seu formato de rosa jamais levantará qualquer suspeita! Este design elegante e delicado nunca o denunciará como vibrador, fazendo com que passe facilmente por um item decorativo.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">Como higienizar?</h3>
+              <ul className="space-y-1 pl-4">
+                <li>Antes e após o uso, lave com cuidado;</li>
+                <li>Use água e sabão neutro para higienizá-lo;</li>
+                <li>Seque com papel toalha ou deixe secar naturalmente;</li>
+                <li>Não deixe úmida a área de magnetismo para não oxidar.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">Quais os cuidados devo ter?</h3>
+              <ul className="space-y-1 pl-4">
+                <li>Nunca compartilhe seu vibrador;</li>
+                <li>Use sempre lubrificantes à base de água;</li>
+                <li>Mantenha em local seco, separado de outros itens;</li>
+                <li>Guarde na embalagem original ou num lenço de tecido.</li>
+              </ul>
+            </div>
+
+            <hr className="border-border my-6" />
+
+            <p>
+              Na DSS garantimos o melhor preço do Sugador de Clitóris Em Formato de Rosa e Vibrador Vai e Vem com entrega para todo o Brasil.
+            </p>
+            <p>
+              Qualquer dúvida, entre em contato com nossa equipe no chat do whatsapp disponível em nosso site!
+            </p>
+            <p className="text-primary font-medium">
+              Confira mais produtos de sex shop
+            </p>
+          </div>
+        </div>
+
+        {/* How to Use */}
+        <div className="mb-12">
+          <h2 className="section-title mb-6">MODO DE USO</h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed max-w-4xl">
+            <p>
+              Lave bem cada parte do seu sex toy e depois que estiver totalmente seco, aplique nele e na região íntima um lubrificante à base de água. Acione os botões dispostos na peça para ligá-lo, desligá-lo e controlar suas funções.
+            </p>
+            <p>
+              O vibrador vai e vem é perfeito para introduzir na ppk e gerar sensações deliciosas com seus movimentos irresistíveis. Os inebriantes movimentos de pulsação da rosa despertam intenso prazer na região clitoriana.
+            </p>
+            <p>
+              Mas você pode abusar da sua imaginação e usar quaisquer das duas partes para estimular outras regiões erógenas do seu corpo. Aproveite este momento que é só seu e se entregue às sensações até alcançar um orgasmo singular!
+            </p>
+          </div>
+        </div>
+
+        {/* Technical Specs */}
+        <div>
+          <h2 className="section-title mb-6">FICHA TÉCNICA</h2>
+          <div className="max-w-2xl">
+            <table className="w-full">
+              <tbody className="divide-y divide-border">
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Conteúdo</td>
+                  <td className="py-3 text-muted-foreground">01 vibrador e 01 cabo magnético.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Material</td>
+                  <td className="py-3 text-muted-foreground">Silicone e ABS.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Vibração</td>
+                  <td className="py-3 text-muted-foreground">7 modos de vibração, 7 modos de vai e vem e 10 modos de pulsação.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Alimentação</td>
+                  <td className="py-3 text-muted-foreground">Recarregável magneticamente.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Formato</td>
+                  <td className="py-3 text-muted-foreground">Rosa.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Embalagem</td>
+                  <td className="py-3 text-muted-foreground">Caixa.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Quantidade</td>
+                  <td className="py-3 text-muted-foreground">01 unidade.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Função</td>
+                  <td className="py-3 text-muted-foreground">Potencializar os orgasmos pelo estímulo vaginal e clitoriano.</td>
+                </tr>
+                <tr className="hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">Tamanho</td>
+                  <td className="py-3 text-muted-foreground">31 x 5,2 cm aproximadamente.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   );
