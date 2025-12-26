@@ -108,7 +108,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-background/10 mt-10 pt-6 text-center">
+        <div className="border-t border-background/10 mt-10 pt-6 text-center space-y-2">
+          <p className="text-sm opacity-70">
+            CNPJ 10.500.685/0001-99
+          </p>
           <p className="text-sm opacity-50">
             © 2024 LUXE Store. Todos os direitos reservados.
           </p>
