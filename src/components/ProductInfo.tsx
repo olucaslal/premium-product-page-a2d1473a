@@ -12,33 +12,27 @@ interface Variation {
 }
 
 const colors: Variation[] = [
-  { id: "rose", name: "Cor", value: "Rosé Gold", available: true },
-  { id: "silver", name: "Cor", value: "Prata", available: true },
-  { id: "black", name: "Cor", value: "Preto", available: false },
-];
-
-const models: Variation[] = [
-  { id: "standard", name: "Modelo", value: "Standard", available: true },
-  { id: "premium", name: "Modelo", value: "Premium", available: true },
+  { id: "red", name: "Cor", value: "Vermelho", available: true },
+  { id: "pink", name: "Cor", value: "Rosa", available: true },
+  { id: "purple", name: "Cor", value: "Roxo", available: false },
 ];
 
 const ProductInfo = () => {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [selectedModel, setSelectedModel] = useState<string | null>(null);
   const { toast } = useToast();
 
-  const originalPrice = 299.9;
-  const currentPrice = 254.9;
+  const originalPrice = 184.1;
+  const currentPrice = 156.49;
   const installments = 12;
   const installmentPrice = (currentPrice / installments).toFixed(2);
 
-  const canBuy = selectedColor && selectedModel;
+  const canBuy = selectedColor !== null;
 
   const handleAddToCart = () => {
     if (!canBuy) {
       toast({
-        title: "Selecione as opções",
-        description: "Por favor, escolha a cor e o modelo antes de continuar.",
+        title: "Selecione uma opção",
+        description: "Por favor, escolha a cor antes de continuar.",
         variant: "destructive",
       });
       return;
@@ -53,8 +47,8 @@ const ProductInfo = () => {
   const handleBuyNow = () => {
     if (!canBuy) {
       toast({
-        title: "Selecione as opções",
-        description: "Por favor, escolha a cor e o modelo antes de continuar.",
+        title: "Selecione uma opção",
+        description: "Por favor, escolha a cor antes de continuar.",
         variant: "destructive",
       });
       return;
@@ -71,7 +65,7 @@ const ProductInfo = () => {
       {/* Product Title & Rating */}
       <div>
         <h1 className="font-heading text-2xl md:text-3xl font-bold text-foreground leading-tight">
-          Massageador Premium Multifuncional com Tecnologia Avançada
+          Sugador de Clitóris em Formato de Rosa e Vibrador Vai e Vem
         </h1>
         <div className="flex items-center gap-2 mt-3">
           <div className="flex items-center gap-1">
@@ -80,12 +74,12 @@ const ProductInfo = () => {
                 key={star}
                 className={cn(
                   "h-4 w-4",
-                  star <= 4 ? "fill-star text-star" : "text-border"
+                  star <= 5 ? "fill-star text-star" : "text-border"
                 )}
               />
             ))}
           </div>
-          <span className="text-sm text-muted-foreground">(127 avaliações)</span>
+          <span className="text-sm text-muted-foreground">(89 avaliações)</span>
         </div>
       </div>
 
@@ -120,29 +114,6 @@ const ProductInfo = () => {
               )}
             >
               {color.value}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Variations - Model */}
-      <div className="space-y-3">
-        <p className="text-sm font-medium text-foreground">
-          Modelo: <span className="font-normal text-muted-foreground">{selectedModel ? models.find(m => m.id === selectedModel)?.value : "Selecione"}</span>
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {models.map((model) => (
-            <button
-              key={model.id}
-              onClick={() => model.available && setSelectedModel(model.id)}
-              disabled={!model.available}
-              className={cn(
-                "variation-button",
-                selectedModel === model.id && "selected",
-                !model.available && "opacity-50 cursor-not-allowed"
-              )}
-            >
-              {model.value}
             </button>
           ))}
         </div>
@@ -184,7 +155,7 @@ const ProductInfo = () => {
           </div>
           <div>
             <p className="text-sm font-medium">Garantia</p>
-            <p className="text-xs text-muted-foreground">12 meses</p>
+            <p className="text-xs text-muted-foreground">90 dias</p>
           </div>
         </div>
         <div className="flex items-center gap-3">
