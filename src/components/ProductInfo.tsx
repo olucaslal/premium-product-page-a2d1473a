@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Star, Truck, Shield, CreditCard, Check, Package } from "lucide-react";
+import { Star, Truck, Shield, Check, Package, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
+import CountdownTimer from "@/components/CountdownTimer";
 
 interface Variation {
   id: string;
@@ -82,6 +83,15 @@ const ProductInfo = () => {
           <span className="text-sm text-muted-foreground">(89 avaliações)</span>
         </div>
       </div>
+
+      {/* Stock Alert */}
+      <div className="bg-destructive/10 border border-destructive/20 text-destructive px-4 py-2 rounded-lg flex items-center gap-2">
+        <AlertTriangle className="h-4 w-4" />
+        <span className="text-sm font-medium">Restam apenas 23 unidades!</span>
+      </div>
+
+      {/* Countdown Timer */}
+      <CountdownTimer />
 
       {/* Price */}
       <div className="space-y-1">
