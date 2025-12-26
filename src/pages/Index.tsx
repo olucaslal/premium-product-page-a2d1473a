@@ -7,22 +7,22 @@ import ProductReviews from "@/components/ProductReviews";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  const productName = "Massageador Premium Multifuncional com Tecnologia Avançada";
-  const productDescription = "Massageador premium com 10 modos de intensidade, silicone médico, design ergonômico e bateria recarregável. Frete grátis e garantia de 12 meses.";
+  const productName = "Sugador de Clitóris em Formato de Rosa e Vibrador Vai e Vem";
+  const productDescription = "Sugador de clitóris com 10 modos de sucção e vibrador vai e vem. Silicone médico, design discreto, bateria recarregável. Frete grátis para todo Brasil.";
 
   return (
     <>
       <Helmet>
         <title>{productName} | LUXE Store</title>
         <meta name="description" content={productDescription} />
-        <meta name="keywords" content="massageador, premium, bem-estar, autocuidado, relaxamento" />
-        <link rel="canonical" href="https://luxestore.com/produto/massageador-premium" />
+        <meta name="keywords" content="sugador, vibrador, rosa, bem-estar, prazer feminino" />
+        <link rel="canonical" href="https://luxestore.com/produto/sugador-rosa-vibrador" />
         
         {/* Open Graph */}
         <meta property="og:title" content={productName} />
         <meta property="og:description" content={productDescription} />
         <meta property="og:type" content="product" />
-        <meta property="og:url" content="https://luxestore.com/produto/massageador-premium" />
+        <meta property="og:url" content="https://luxestore.com/produto/sugador-rosa-vibrador" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -74,7 +74,7 @@ const Index = () => {
           },
           "offers": {
             "@type": "Offer",
-            "price": "254.90",
+            "price": "156.49",
             "priceCurrency": "BRL",
             "availability": "https://schema.org/InStock",
             "seller": {
@@ -84,8 +84,8 @@ const Index = () => {
           },
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "reviewCount": "127"
+            "ratingValue": "4.9",
+            "reviewCount": "89"
           }
         })}
       </script>
