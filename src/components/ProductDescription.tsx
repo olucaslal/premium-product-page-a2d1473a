@@ -94,9 +94,6 @@ const ProductDescription = () => {
             <p>
               Qualquer dúvida, entre em contato com nossa equipe no chat do whatsapp disponível em nosso site!
             </p>
-            <p className="text-primary font-semibold">
-              Confira mais produtos de sex shop
-            </p>
           </div>
         </div>
 
