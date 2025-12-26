@@ -33,28 +33,24 @@ const Footer = () => {
             <h4 className="font-heading font-semibold mb-4">Institucional</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                <a href="#quem-somos" className="opacity-70 hover:opacity-100 transition-opacity">
                   Quem Somos
                 </a>
-                <p className="text-xs opacity-50 mt-1">Conheça nossa história e missão de levar bem-estar e prazer com discrição.</p>
               </li>
               <li>
-                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                <a href="#privacidade" className="opacity-70 hover:opacity-100 transition-opacity">
                   Política de Privacidade
                 </a>
-                <p className="text-xs opacity-50 mt-1">Seus dados estão seguros conosco. Entenda como protegemos suas informações.</p>
               </li>
               <li>
-                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                <a href="#termos" className="opacity-70 hover:opacity-100 transition-opacity">
                   Termos de Uso
                 </a>
-                <p className="text-xs opacity-50 mt-1">Regras e condições para utilização da nossa plataforma.</p>
               </li>
               <li>
-                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                <a href="#trocas" className="opacity-70 hover:opacity-100 transition-opacity">
                   Trocas e Devoluções
                 </a>
-                <p className="text-xs opacity-50 mt-1">Satisfação garantida. Veja como solicitar troca ou devolução.</p>
               </li>
             </ul>
           </div>
