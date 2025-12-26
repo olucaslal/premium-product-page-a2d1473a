@@ -41,8 +41,8 @@ const ProductGallery = () => {
         />
         {/* Badges */}
         <div className="absolute top-3 left-3 md:top-4 md:left-4 flex flex-col gap-2">
-          <span className="badge-promo text-xs md:text-sm">-15% OFF</span>
-          <span className="badge-new text-xs md:text-sm">NOVO</span>
+          <span className="badge-promo text-xs md:text-sm">-25% OFF</span>
+          <span className="bg-primary text-primary-foreground text-xs md:text-sm font-semibold px-2 py-1 rounded-lg">SOMENTE PIX</span>
         </div>
       </div>
 
