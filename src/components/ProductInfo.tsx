@@ -137,8 +137,8 @@ const ProductInfo = () => {
             <Truck className="h-5 w-5 text-primary" />
           </div>
           <div>
-            <p className="text-sm font-medium">Frete Grátis</p>
-            <p className="text-xs text-muted-foreground">Para todo Brasil</p>
+            <p className="text-sm font-medium">Entrega Rápida</p>
+            <p className="text-xs text-muted-foreground">Até 24h para BH e região</p>
           </div>
         </div>
         <div className="flex items-center gap-3">
