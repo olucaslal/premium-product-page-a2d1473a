@@ -9,16 +9,17 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    // Get or set the end time in localStorage
-    const storedEndTime = localStorage.getItem("promoEndTime");
+    // Clear old key and use new versioned key
+    localStorage.removeItem("promoEndTime");
+    const storedEndTime = localStorage.getItem("promoEndTime_v2");
     let endTime: number;
 
     if (storedEndTime) {
       endTime = parseInt(storedEndTime, 10);
     } else {
-      // Set end time to 24 hours from now
+      // Set end time to 17h 23min from now
       endTime = Date.now() + (17 * 60 * 60 * 1000) + (23 * 60 * 1000);
-      localStorage.setItem("promoEndTime", endTime.toString());
+      localStorage.setItem("promoEndTime_v2", endTime.toString());
     }
 
     const calculateTimeLeft = () => {
@@ -28,7 +29,7 @@ const CountdownTimer = () => {
       if (difference <= 0) {
         // Reset the timer to 17h 23min
         const newEndTime = Date.now() + (17 * 60 * 60 * 1000) + (23 * 60 * 1000);
-        localStorage.setItem("promoEndTime", newEndTime.toString());
+        localStorage.setItem("promoEndTime_v2", newEndTime.toString());
         return { hours: 17, minutes: 23, seconds: 0 };
       }
 
