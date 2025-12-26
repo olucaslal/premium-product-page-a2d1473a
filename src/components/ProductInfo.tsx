@@ -13,7 +13,7 @@ interface Variation {
 
 const colors: Variation[] = [
   { id: "red", name: "Cor", value: "Vermelho", available: true },
-  { id: "pink", name: "Cor", value: "Rosa", available: true },
+  { id: "pink", name: "Cor", value: "Rosa", available: false },
   { id: "purple", name: "Cor", value: "Roxo", available: false },
 ];
 
