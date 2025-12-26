@@ -3,19 +3,19 @@ const ProductDescription = () => {
     <section className="py-12 border-t border-border">
       <div className="container">
         {/* Description */}
-        <div className="mb-12">
-          <h2 className="section-title mb-6">DESCRIÇÃO</h2>
-          <div className="space-y-6 text-muted-foreground leading-relaxed max-w-4xl">
+        <div className="mb-12 bg-[#fdf5f3] p-6 md:p-10 rounded-lg">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-[#4a3728] mb-6 tracking-wide">DESCRIÇÃO</h2>
+          <div className="space-y-6 text-[#5d4e42] leading-relaxed max-w-4xl text-[15px]">
             <p>
-              Conceda prazeres inigualáveis ao seu corpo com os encantos deste sex toy Em Formato de Rosa!
+              Conceda prazeres inigualáveis ao seu corpo com os encantos deste sex toy <strong className="text-[#4a3728]">Em Formato de Rosa</strong>!
             </p>
             <p>
-              O poder orgástico do Sugador de Clitóris se completa com o Vibrador Vai e Vem, resultando num acessório perfeito para o seu prazer!
+              O poder orgástico do <strong className="text-[#4a3728]">Sugador de Clitóris</strong> se completa com o <strong className="text-primary">Vibrador Vai e Vem</strong>, resultando num acessório perfeito para o seu prazer!
             </p>
 
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">Quais são as suas dimensões aproximadas?</h3>
-              <ul className="space-y-1 pl-4">
+              <h3 className="font-heading font-bold text-[#4a3728] mb-3">Quais são as suas dimensões aproximadas?</h3>
+              <ul className="space-y-1 pl-1 list-disc list-inside">
                 <li>Comprimento total: 31 cm.</li>
                 <li>Diâmetro do bocal: 1,3 cm.</li>
                 <li>Comprimento do vibrador: 10 cm.</li>
@@ -24,7 +24,7 @@ const ProductDescription = () => {
             </div>
 
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">O que é o Sugador de Clitóris Em Formato de Rosa e Vibrador Vai e Vem?</h3>
+              <h3 className="font-heading font-bold text-[#4a3728] mb-3 underline decoration-[#4a3728]/30 underline-offset-4">O que é o Sugador de Clitóris Em Formato de Rosa e Vibrador Vai e Vem?</h3>
               <p className="mb-4">
                 É um brinquedo erótico feminino hiper discreto e charmoso, composto por duas partes: A superior em forma de rosa que exerce 10 modos de pulsação e um vibrador que faz 7 movimentos de vai e vem com 7 níveis vibratórios.
               </p>
@@ -37,8 +37,8 @@ const ProductDescription = () => {
             </div>
 
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">Quais são os seus benefícios?</h3>
-              <ul className="space-y-1 pl-4">
+              <h3 className="font-heading font-bold text-[#4a3728] mb-3 underline decoration-[#4a3728]/30 underline-offset-4">Quais são os seus benefícios?</h3>
+              <ul className="space-y-1 pl-1 list-disc list-inside">
                 <li>Dois em um;</li>
                 <li>Incita o clitóris;</li>
                 <li>Estímulo vaginal;</li>
@@ -54,7 +54,7 @@ const ProductDescription = () => {
             </div>
 
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">Por que usar?</h3>
+              <h3 className="font-heading font-bold text-[#4a3728] mb-3 underline decoration-[#4a3728]/30 underline-offset-4">Por que usar?</h3>
               <p className="mb-4">
                 Com este brinquedo erótico potente e completo, a mulher terá dois sex toys no mesmo acessório! Assim ela despertará seu prazer clitoriano e vaginal para chegar ao clímax mais depressa, num estímulo bem mais intenso.
               </p>
@@ -67,8 +67,8 @@ const ProductDescription = () => {
             </div>
 
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">Como higienizar?</h3>
-              <ul className="space-y-1 pl-4">
+              <h3 className="font-heading font-bold text-[#4a3728] mb-3 underline decoration-[#4a3728]/30 underline-offset-4">Como higienizar?</h3>
+              <ul className="space-y-1 pl-1 list-disc list-inside">
                 <li>Antes e após o uso, lave com cuidado;</li>
                 <li>Use água e sabão neutro para higienizá-lo;</li>
                 <li>Seque com papel toalha ou deixe secar naturalmente;</li>
@@ -77,8 +77,8 @@ const ProductDescription = () => {
             </div>
 
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">Quais os cuidados devo ter?</h3>
-              <ul className="space-y-1 pl-4">
+              <h3 className="font-heading font-bold text-[#4a3728] mb-3 underline decoration-[#4a3728]/30 underline-offset-4">Quais os cuidados devo ter?</h3>
+              <ul className="space-y-1 pl-1 list-disc list-inside">
                 <li>Nunca compartilhe seu vibrador;</li>
                 <li>Use sempre lubrificantes à base de água;</li>
                 <li>Mantenha em local seco, separado de outros itens;</li>
@@ -86,7 +86,7 @@ const ProductDescription = () => {
               </ul>
             </div>
 
-            <hr className="border-border my-6" />
+            <hr className="border-[#e8ddd8] my-6" />
 
             <p>
               Na DSS garantimos o melhor preço do Sugador de Clitóris Em Formato de Rosa e Vibrador Vai e Vem com entrega para todo o Brasil.
@@ -94,16 +94,16 @@ const ProductDescription = () => {
             <p>
               Qualquer dúvida, entre em contato com nossa equipe no chat do whatsapp disponível em nosso site!
             </p>
-            <p className="text-primary font-medium">
+            <p className="text-primary font-semibold">
               Confira mais produtos de sex shop
             </p>
           </div>
         </div>
 
         {/* How to Use */}
-        <div className="mb-12">
-          <h2 className="section-title mb-6">MODO DE USO</h2>
-          <div className="space-y-4 text-muted-foreground leading-relaxed max-w-4xl">
+        <div className="mb-12 bg-[#fdf5f3] p-6 md:p-10 rounded-lg">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-[#4a3728] mb-6 tracking-wide">MODO DE USO</h2>
+          <div className="space-y-4 text-[#5d4e42] leading-relaxed max-w-4xl text-[15px]">
             <p>
               Lave bem cada parte do seu sex toy e depois que estiver totalmente seco, aplique nele e na região íntima um lubrificante à base de água. Acione os botões dispostos na peça para ligá-lo, desligá-lo e controlar suas funções.
             </p>
@@ -117,46 +117,46 @@ const ProductDescription = () => {
         </div>
 
         {/* Technical Specs */}
-        <div>
-          <h2 className="section-title mb-6">FICHA TÉCNICA</h2>
+        <div className="bg-[#fdf5f3] p-6 md:p-10 rounded-lg">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-[#4a3728] mb-6 tracking-wide">FICHA TÉCNICA</h2>
           <div className="max-w-2xl">
-            <table className="w-full">
-              <tbody className="divide-y divide-border">
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Conteúdo</td>
-                  <td className="py-3 text-muted-foreground">01 vibrador e 01 cabo magnético.</td>
+            <table className="w-full text-[15px]">
+              <tbody className="divide-y divide-[#e8ddd8]">
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Conteúdo</td>
+                  <td className="py-3 text-[#5d4e42]">01 vibrador e 01 cabo magnético.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Material</td>
-                  <td className="py-3 text-muted-foreground">Silicone e ABS.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Material</td>
+                  <td className="py-3 text-[#5d4e42]">Silicone e ABS.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Vibração</td>
-                  <td className="py-3 text-muted-foreground">7 modos de vibração, 7 modos de vai e vem e 10 modos de pulsação.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Vibração</td>
+                  <td className="py-3 text-[#5d4e42]">7 modos de vibração, 7 modos de vai e vem e 10 modos de pulsação.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Alimentação</td>
-                  <td className="py-3 text-muted-foreground">Recarregável magneticamente.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Alimentação</td>
+                  <td className="py-3 text-[#5d4e42]">Recarregável magneticamente.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Formato</td>
-                  <td className="py-3 text-muted-foreground">Rosa.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Formato</td>
+                  <td className="py-3 text-[#5d4e42]">Rosa.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Embalagem</td>
-                  <td className="py-3 text-muted-foreground">Caixa.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Embalagem</td>
+                  <td className="py-3 text-[#5d4e42]">Caixa.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Quantidade</td>
-                  <td className="py-3 text-muted-foreground">01 unidade.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Quantidade</td>
+                  <td className="py-3 text-[#5d4e42]">01 unidade.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Função</td>
-                  <td className="py-3 text-muted-foreground">Potencializar os orgasmos pelo estímulo vaginal e clitoriano.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Função</td>
+                  <td className="py-3 text-[#5d4e42]">Potencializar os orgasmos pelo estímulo vaginal e clitoriano.</td>
                 </tr>
-                <tr className="hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">Tamanho</td>
-                  <td className="py-3 text-muted-foreground">31 x 5,2 cm aproximadamente.</td>
+                <tr className="hover:bg-[#f5ebe7] transition-colors">
+                  <td className="py-3 pr-4 font-semibold text-[#4a3728]">Tamanho</td>
+                  <td className="py-3 text-[#5d4e42]">31 x 5,2 cm aproximadamente.</td>
                 </tr>
               </tbody>
             </table>
