@@ -25,10 +25,9 @@ const ProductInfo = () => {
   const [shippingResult, setShippingResult] = useState<{ show: boolean } | null>(null);
   const { toast } = useToast();
 
-  const originalPrice = 184.1;
-  const currentPrice = 156.49;
-  const installments = 12;
-  const installmentPrice = (currentPrice / installments).toFixed(2);
+  const originalPrice = 200;
+  const currentPrice = 149.90;
+  const discountPercent = 25;
 
   const canBuy = selectedColor !== null;
 
@@ -94,16 +93,23 @@ const ProductInfo = () => {
       <CountdownTimer />
 
       {/* Price */}
-      <div className="space-y-1">
-        <p className="price-original">
-          De: R$ {originalPrice.toFixed(2).replace(".", ",")}
-        </p>
+      <div className="space-y-2">
+        <div className="flex items-center gap-2">
+          <p className="price-original">
+            De: R$ {originalPrice.toFixed(2).replace(".", ",")}
+          </p>
+          <span className="bg-success text-success-foreground text-xs font-bold px-2 py-1 rounded">
+            -{discountPercent}% OFF
+          </span>
+        </div>
         <p className="price-current">
           R$ {currentPrice.toFixed(2).replace(".", ",")}
         </p>
-        <p className="price-installment">
-          ou {installments}x de R$ {installmentPrice.replace(".", ",")} sem juros
-        </p>
+        <div className="bg-primary/10 border border-primary/30 rounded-lg px-3 py-2">
+          <p className="text-sm font-medium text-primary">
+            💰 Preço exclusivo para pagamento via PIX
+          </p>
+        </div>
       </div>
 
       {/* Variations - Color */}
