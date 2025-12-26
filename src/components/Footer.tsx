@@ -34,23 +34,27 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
-                  Sobre nós
+                  Quem Somos
                 </a>
+                <p className="text-xs opacity-50 mt-1">Conheça nossa história e missão de levar bem-estar e prazer com discrição.</p>
               </li>
               <li>
                 <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
-                  Política de privacidade
+                  Política de Privacidade
                 </a>
+                <p className="text-xs opacity-50 mt-1">Seus dados estão seguros conosco. Entenda como protegemos suas informações.</p>
               </li>
               <li>
                 <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
-                  Termos de uso
+                  Termos de Uso
                 </a>
+                <p className="text-xs opacity-50 mt-1">Regras e condições para utilização da nossa plataforma.</p>
               </li>
               <li>
                 <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
-                  Trocas e devoluções
+                  Trocas e Devoluções
                 </a>
+                <p className="text-xs opacity-50 mt-1">Satisfação garantida. Veja como solicitar troca ou devolução.</p>
               </li>
             </ul>
           </div>
@@ -94,14 +98,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 opacity-70" />
-                <a href="tel:+5511999999999" className="opacity-70 hover:opacity-100 transition-opacity">
-                  (11) 99999-9999
+                <a href="tel:+5531993753060" className="opacity-70 hover:opacity-100 transition-opacity">
+                  (31) 99375-3060
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 opacity-70 mt-0.5" />
                 <span className="opacity-70">
-                  São Paulo, SP - Brasil
+                  Belo Horizonte, MG - Brasil
                 </span>
               </li>
             </ul>
