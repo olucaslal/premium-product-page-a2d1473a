@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Star, Truck, Shield, CreditCard, Check } from "lucide-react";
+import { Star, Truck, Shield, CreditCard, Check, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 
@@ -19,6 +20,8 @@ const colors: Variation[] = [
 
 const ProductInfo = () => {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [cep, setCep] = useState("");
+  const [shippingResult, setShippingResult] = useState<{ show: boolean } | null>(null);
   const { toast } = useToast();
 
   const originalPrice = 184.1;
@@ -167,6 +170,62 @@ const ProductInfo = () => {
             <p className="text-xs text-muted-foreground">Em até 12x</p>
           </div>
         </div>
+      </div>
+
+      {/* Shipping Calculator */}
+      <div className="p-4 bg-muted/50 rounded-lg border border-border space-y-3">
+        <p className="text-sm font-medium text-foreground">Calcular frete e prazo</p>
+        <div className="flex gap-2">
+          <Input
+            type="text"
+            placeholder="Digite seu CEP"
+            value={cep}
+            onChange={(e) => {
+              const value = e.target.value.replace(/\D/g, '').slice(0, 8);
+              setCep(value);
+              setShippingResult(null);
+            }}
+            className="flex-1"
+            maxLength={9}
+          />
+          <Button
+            variant="outline"
+            onClick={() => {
+              if (cep.length >= 8) {
+                setShippingResult({ show: true });
+              } else {
+                toast({
+                  title: "CEP inválido",
+                  description: "Por favor, digite um CEP válido com 8 dígitos.",
+                  variant: "destructive",
+                });
+              }
+            }}
+            className="border-primary text-primary hover:bg-primary-light"
+          >
+            Calcular
+          </Button>
+        </div>
+        <a 
+          href="https://buscacepinter.correios.com.br/app/endereco/index.php" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-xs text-primary hover:underline"
+        >
+          Não sei meu CEP
+        </a>
+        
+        {shippingResult?.show && (
+          <div className="mt-3 p-3 bg-success/10 border border-success/20 rounded-lg">
+            <div className="flex items-center gap-3">
+              <Package className="h-5 w-5 text-success" />
+              <div>
+                <p className="text-sm font-medium text-success">Frete Grátis</p>
+                <p className="text-xs text-muted-foreground">Entrega em até 3 dias úteis</p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Stock indicator */}
