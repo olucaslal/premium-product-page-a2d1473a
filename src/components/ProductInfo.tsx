@@ -122,22 +122,14 @@ const ProductInfo = () => {
         </div>
       </div>
 
-      {/* CTA Buttons */}
-      <div className="flex flex-col gap-3 pt-2">
+      {/* CTA Button */}
+      <div className="pt-2">
         <Button
           onClick={handleBuyNow}
           className="product-cta w-full text-base"
           size="lg"
         >
           COMPRAR
-        </Button>
-        <Button
-          onClick={handleAddToCart}
-          variant="outline"
-          className="w-full text-base border-2 border-primary text-primary hover:bg-primary-light"
-          size="lg"
-        >
-          ADICIONAR AO CARRINHO
         </Button>
       </div>
 
