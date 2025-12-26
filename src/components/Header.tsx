@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logoImage from "@/assets/logo-transparent.png";
 
 const Header = () => {
   const [cartCount] = useState(0);
@@ -11,13 +12,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container flex h-16 items-center justify-between gap-4">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
-          <span className="font-heading text-xl font-bold text-primary">
-            LUXE
-          </span>
-          <span className="font-heading text-xl font-light text-foreground">
-            store
-          </span>
+        <a href="/" className="flex items-center">
+          <img src={logoImage} alt="LUXE Store" className="h-10 w-auto" />
         </a>
 
         {/* Search - Desktop */}
