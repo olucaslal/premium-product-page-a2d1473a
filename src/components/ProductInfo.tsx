@@ -20,7 +20,7 @@ const colors: Variation[] = [
 ];
 
 const ProductInfo = () => {
-  const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string | null>("red");
   const [cep, setCep] = useState("");
   const [shippingResult, setShippingResult] = useState<{ show: boolean } | null>(null);
   const { toast } = useToast();
