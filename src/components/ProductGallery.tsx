@@ -26,7 +26,7 @@ const ProductGallery = () => {
     <div className="flex flex-col gap-4">
       {/* Main Image */}
       <div 
-        className="relative aspect-square overflow-hidden rounded-xl bg-secondary cursor-zoom-in"
+        className="relative aspect-square overflow-hidden rounded-xl bg-secondary cursor-zoom-in max-h-[70vh] md:max-h-none"
         onMouseEnter={() => setIsZoomed(true)}
         onMouseLeave={() => setIsZoomed(false)}
       >
@@ -35,27 +35,27 @@ const ProductGallery = () => {
           alt={images[selectedImage].alt}
           className={cn(
             "h-full w-full object-contain transition-transform duration-500",
-            isZoomed && "scale-125"
+            isZoomed && "md:scale-125"
           )}
           loading="eager"
         />
         {/* Badges */}
-        <div className="absolute top-4 left-4 flex flex-col gap-2">
-          <span className="badge-promo">-15% OFF</span>
-          <span className="badge-new">NOVO</span>
+        <div className="absolute top-3 left-3 md:top-4 md:left-4 flex flex-col gap-2">
+          <span className="badge-promo text-xs md:text-sm">-15% OFF</span>
+          <span className="badge-new text-xs md:text-sm">NOVO</span>
         </div>
       </div>
 
       {/* Thumbnails */}
-      <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin">
+      <div className="grid grid-cols-7 gap-2 md:flex md:gap-3 md:overflow-x-auto md:pb-2 scrollbar-thin">
         {images.map((image, index) => (
           <button
             key={image.id}
             onClick={() => setSelectedImage(index)}
             className={cn(
-              "flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 bg-secondary",
+              "aspect-square w-full md:flex-shrink-0 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 bg-secondary",
               selectedImage === index
-                ? "border-primary ring-2 ring-primary ring-offset-2"
+                ? "border-primary ring-2 ring-primary ring-offset-1 md:ring-offset-2"
                 : "border-border hover:border-primary/50"
             )}
           >
