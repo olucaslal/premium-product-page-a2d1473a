@@ -1,0 +1,121 @@
+import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-foreground text-background py-12">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Brand */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="font-heading text-xl font-bold">LUXE</span>
+              <span className="font-heading text-xl font-light opacity-80">store</span>
+            </div>
+            <p className="text-sm opacity-70 leading-relaxed">
+              Sua loja premium para produtos de bem-estar e autocuidado. 
+              Qualidade, discrição e satisfação garantida.
+            </p>
+            <div className="flex items-center gap-4 mt-4">
+              <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                <Twitter className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h4 className="font-heading font-semibold mb-4">Institucional</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Sobre nós
+                </a>
+              </li>
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Política de privacidade
+                </a>
+              </li>
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Termos de uso
+                </a>
+              </li>
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Trocas e devoluções
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Help */}
+          <div>
+            <h4 className="font-heading font-semibold mb-4">Ajuda</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Central de ajuda
+                </a>
+              </li>
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Como comprar
+                </a>
+              </li>
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Formas de pagamento
+                </a>
+              </li>
+              <li>
+                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity">
+                  Rastrear pedido
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-heading font-semibold mb-4">Contato</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4 opacity-70" />
+                <a href="mailto:contato@luxestore.com" className="opacity-70 hover:opacity-100 transition-opacity">
+                  contato@luxestore.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="h-4 w-4 opacity-70" />
+                <a href="tel:+5511999999999" className="opacity-70 hover:opacity-100 transition-opacity">
+                  (11) 99999-9999
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 opacity-70 mt-0.5" />
+                <span className="opacity-70">
+                  São Paulo, SP - Brasil
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-background/10 mt-10 pt-6 text-center">
+          <p className="text-sm opacity-50">
+            © 2024 LUXE Store. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
