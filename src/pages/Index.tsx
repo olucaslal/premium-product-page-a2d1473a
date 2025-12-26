@@ -5,6 +5,7 @@ import ProductInfo from "@/components/ProductInfo";
 import ProductDescription from "@/components/ProductDescription";
 import ProductReviews from "@/components/ProductReviews";
 import Footer from "@/components/Footer";
+import FloatingVideo from "@/components/FloatingVideo";
 
 const Index = () => {
   const productName = "Sugador de Clitóris em Formato de Rosa e Vibrador Vai e Vem";
@@ -59,6 +60,8 @@ const Index = () => {
         </main>
 
         <Footer />
+
+        <FloatingVideo />
       </div>
 
       {/* Structured Data */}
