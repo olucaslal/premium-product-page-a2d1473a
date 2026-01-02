@@ -40,6 +40,7 @@ const MetaPixel = () => {
 
     window.fbq('init', '1368920974612657');
     window.fbq('track', 'PageView');
+    console.log('Meta Pixel Initialized: 1368920974612657');
   }, []);
 
   return (
